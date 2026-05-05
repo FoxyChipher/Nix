@@ -41,6 +41,7 @@
       ../cicada/programs/GUI/browsers/chromium
       ../cicada/programs/GUI/browsers/firefox
       ../cicada/programs/GUI/browsers/tor
+      ../cicada/programs/GUI/browsers/zen
       ../cicada/programs/GUI/discord
       # ../cicada/programs/GUI/dolphin
       # ../cicada/programs/GUI/games/factorio
