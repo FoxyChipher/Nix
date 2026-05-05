@@ -35,6 +35,7 @@
       # ../cicada/programs/CTL/shell
       ../cicada/programs/CTL/yazi
       ../cicada/programs/CTL/yt-dlp
+      ../cicada/programs/CTL/inxi
 
       ../cicada/programs/GUI/browsers/chromium
       ../cicada/programs/GUI/browsers/firefox
