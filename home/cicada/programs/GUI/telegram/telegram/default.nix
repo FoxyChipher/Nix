@@ -1,5 +1,3 @@
-{ config, ... }: {
-  programs.telegram-desktop = {
-    enable = true;
-  };
+{ config, pkgs, lib, inputs, ... }: {
+  home.packages = [ pkgs.telegram-desktop ];
 }

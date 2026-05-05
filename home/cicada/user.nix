@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."cicada" = {
     isNormalUser = true;
+    group = "cicada";
     description = "cicada";
     home = "/home/cicada";
     shell = pkgs.bash;
@@ -25,7 +25,7 @@
       "kmem"
       "incus-admin"
     ];
-
     packages = with pkgs; [ ];
   };
+  users.groups.cicada = {};
 }

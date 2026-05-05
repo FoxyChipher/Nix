@@ -2,16 +2,6 @@
 {
   xdg = with config.home; {
     enable = true;
-
-    portal = {
-      enable = true;
-      config = {
-        "org.freedesktop.impl.portal.FileChooser" = {
-          backend = "gnome";
-        };
-      };
-    };
-
     userDirs = {
       enable = true;
       createDirectories = true;
@@ -28,10 +18,8 @@
         XDG_VID_DIR = "${homeDirectory}/Downloads/Videos";
       };
     };
-
     mimeApps = {
       enable = true;
-
       defaultApplications = {
         "text/html" = [ "firefox.desktop" ];
         "x-scheme-handler/http" = [ "firefox.desktop" ];

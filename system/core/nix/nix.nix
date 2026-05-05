@@ -23,7 +23,7 @@
       experimental-features = [
         "nix-command"
         "flakes"
-        "flake-self-attrs"
+        # "flake-self-attrs"
         # "pipe-operator"
       ];
     };
@@ -31,5 +31,3 @@
 
   system.stateVersion = "25.11";
 }
-
-

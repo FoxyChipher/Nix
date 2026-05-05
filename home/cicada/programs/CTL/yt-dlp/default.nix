@@ -1,7 +1,6 @@
-{ pkgsUnstable, ... }:
-{
+{ pkgs, ... }: {
   programs.yt-dlp = {
     enable = true;
-    package = pkgsUnstable.yt-dlp;
+    package = pkgs.yt-dlp;
   };
 }
