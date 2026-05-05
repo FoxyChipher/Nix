@@ -1,3 +1,3 @@
-{ ... }: {
-  home.packages = [pkgs.inxi];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.inxi ];
 }

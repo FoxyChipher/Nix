@@ -22,6 +22,7 @@
     # ./system/environment/mime
 
     ./system/programs/appimage.nix
+    ./system/programs/btop-cuda
     ./system/programs/gnupg.nix
     ./system/programs/mtr.nix
     ./system/programs/nh

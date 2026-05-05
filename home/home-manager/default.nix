@@ -20,7 +20,7 @@
 
       # ../cicada/local/factorio
 
-      ../cicada/programs/CTL/btop
+      # ../cicada/programs/CTL/btop
       ../cicada/programs/CTL/cava
       ../cicada/programs/CTL/fastfetch
       ../cicada/programs/CTL/fd
