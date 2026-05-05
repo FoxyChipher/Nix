@@ -44,7 +44,7 @@
       inherit system;
       specialArgs = { inherit inputs; };
       modules = [
-        # ./hosts/asus-fa507nvr/configuration.nix
+        ./.configuration.nix
         niri.nixosModules.niri
         # agenix.nixosModules.default
         # inputs.stylix.nixosModules.stylix
