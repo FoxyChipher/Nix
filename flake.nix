@@ -4,6 +4,15 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    nixcord.url = "github:FlameFlag/nixcord";
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    system76-scheduler-niri.url = "github:Kirottu/system76-scheduler-niri";
+
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -13,6 +22,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # stylix.url = "github:danth/stylix/release-25.11";
+
+    # nix-cursors = {
+    #   url = "github:LilleAila/nix-cursors";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     niri = {
       url = "github:sodiboo/niri-flake";
@@ -56,7 +72,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "backup";
-          home-manager.users.cicada = import ./system/home/home-manager.nix;
+          home-manager.users.cicada = import ./home/home-manager;
           home-manager.extraSpecialArgs = { inherit inputs; };
         }
       ];

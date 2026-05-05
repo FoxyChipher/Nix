@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, ... }: {
   programs.obsidian = {
     enable = true;
   };

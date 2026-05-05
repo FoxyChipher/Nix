@@ -34,5 +34,6 @@
         source = ./config;
         recursive = true;
       };
+    };
   };
 }
