@@ -1,0 +1,15 @@
+include "input.kdl"
+include "output.kdl"
+include "overview.kdl"
+include "binds.kdl"
+include "layout.kdl"
+include "miscellaneous.kdl"
+include "window-rule.kdl"
+include "layer-rule.kdl"
+include "animations.kdl"
+include "gestures.kdl"
+include "recent-windows.kdl"
+
+layer-rule {
+    place-within-backdrop true
+}

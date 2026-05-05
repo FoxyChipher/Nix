@@ -1,0 +1,21 @@
+{
+  programs.kitty = {
+    enable = true;
+    shellIntegration.enableZshIntegration = true;
+    extraConfig = ''
+      font_family           Monocraft Nerd Font Mono
+      bold_font             auto
+      italic_font           auto
+      bold_italic_font      auto
+      enable_audio_bell     no
+      font_size             9.0
+      window_padding_width 25
+      # include theme.conf
+      cursor_trail          1
+      background_opacity    0.60
+      hide_window_decorations yes
+      confirm_os_window_close 0
+      background_blur       1
+    '';
+  };
+}

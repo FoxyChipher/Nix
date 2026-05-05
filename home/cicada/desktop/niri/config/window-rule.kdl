@@ -1,0 +1,86 @@
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+    draw-border-with-background false
+    // blur 1
+    // opacity 0.5
+    // tiled-state true
+}
+
+window-rule {
+    match app-id="org.kde.dolphin"
+    opacity 0.9
+    background-effect {
+        blur true
+        xray true
+        noise 0.02
+        saturation 1.5
+    }
+}
+
+window-rule {
+    match app-id="dev.zed.Zed"
+    opacity 0.9
+    background-effect {
+        blur true
+        xray false
+        noise 0.02
+        saturation 1.5
+    }
+}
+
+window-rule {
+    match app-id="factorio"
+    open-maximized true
+
+    // background-effect {
+    //     blur true
+    // }
+}
+
+window-rule {
+    match app-id="code"
+    open-maximized true
+    background-effect {
+        blur true
+        xray false
+        noise 0.02
+        saturation 1.5
+    }
+}
+
+window-rule {
+    match app-id="kitty"
+    open-maximized false
+
+    // background-effect {
+    //     blur true
+    // }
+}
+
+window-rule {
+    match app-id="spotify"
+    // open-on-workspace "music"
+    open-maximized true
+    // blur 1
+    opacity 0.9
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="zen"
+    // open-on-workspace "browser"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="zed"
+    open-maximized true
+}
+
+// window-rule {
+//     match app-id="org.kde.okular"
+//     open-maximized true
+// }
