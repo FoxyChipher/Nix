@@ -26,6 +26,9 @@
     ./system/programs/gnupg.nix
     ./system/programs/mtr.nix
     ./system/programs/nh
+    ./system/programs/wget
+    ./system/programs/curl
+    ./system/programs/nvtop
 
     ./system/security/polkit.nix
     # ./system/security/sops.nix
