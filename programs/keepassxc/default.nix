@@ -1,3 +1,5 @@
-{ ... }: {
-  programs.keepassxc.enable = true;
+{ pkgs, ... }: {
+  environment.systemPackages = [
+    pkgs.keepassxc
+  ];
 }
