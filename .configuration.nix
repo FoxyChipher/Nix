@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ./home/cicada/user.nix
+    ./home/cicada/pkgs.nix
 
     ./hosts/terminal/hardware/fa507nvr
     ./hosts/terminal/hardware-configuration.nix
