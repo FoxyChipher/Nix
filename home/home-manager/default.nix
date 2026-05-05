@@ -17,8 +17,10 @@
       # ../cicada/desktop/swaync
       ../cicada/desktop/udiskie
       # ../cicada/desktop/waybar
+
       # ../cicada/local/factorio
-      # ../cicada/programs/CTL/btop
+
+      ../cicada/programs/CTL/btop
       ../cicada/programs/CTL/cava
       ../cicada/programs/CTL/fastfetch
       ../cicada/programs/CTL/fd
@@ -33,6 +35,7 @@
       # ../cicada/programs/CTL/shell
       ../cicada/programs/CTL/yazi
       ../cicada/programs/CTL/yt-dlp
+
       ../cicada/programs/GUI/browsers/chromium
       ../cicada/programs/GUI/browsers/firefox
       ../cicada/programs/GUI/browsers/tor
@@ -48,6 +51,7 @@
       ../cicada/programs/GUI/telegram/ayugram
       ../cicada/programs/GUI/telegram/telegram
       ../cicada/programs/GUI/throne
+      ../cicada/programs/GUI/zed
       # ../cicada/programs/GUI/zathura
   ];
   home.username = "cicada";
