@@ -1,0 +1,169 @@
+.
+├── flake.nix
+├── home
+│   ├── cicada
+│   │   ├── desktop
+│   │   │   ├── cliphist
+│   │   │   │   └── default.nix
+│   │   │   ├── fusuma
+│   │   │   │   └── default.nix
+│   │   │   ├── fuzzel
+│   │   │   │   └── default.nix
+│   │   │   ├── hyprland
+│   │   │   │   └── default.nix
+│   │   │   ├── hyprlock
+│   │   │   │   └── default.nix
+│   │   │   ├── niri
+│   │   │   │   ├── config
+│   │   │   │   │   ├── animations.kdl
+│   │   │   │   │   ├── binds.kdl
+│   │   │   │   │   ├── config.kdl
+│   │   │   │   │   ├── gestures.kdl
+│   │   │   │   │   ├── input.kdl
+│   │   │   │   │   ├── layer-rule.kdl
+│   │   │   │   │   ├── layout.kdl
+│   │   │   │   │   ├── miscellaneous.kdl
+│   │   │   │   │   ├── output.kdl
+│   │   │   │   │   ├── overview.kdl
+│   │   │   │   │   ├── recent-windows.kdl
+│   │   │   │   │   └── window-rule.kdl
+│   │   │   │   └── default.nix
+│   │   │   ├── noctalia
+│   │   │   │   └── default.nix
+│   │   │   ├── portals
+│   │   │   │   └── default.nix
+│   │   │   ├── rofi
+│   │   │   │   └── default.nix
+│   │   │   ├── stasis
+│   │   │   │   └── default.nix
+│   │   │   ├── swayimg
+│   │   │   │   └── default.nix
+│   │   │   ├── swaync
+│   │   │   │   └── default.nix
+│   │   │   ├── udiskie
+│   │   │   │   └── default.nix
+│   │   │   └── waybar
+│   │   │       └── default.nix
+│   │   ├── local
+│   │   │   └── factorio
+│   │   │       └── default.nix
+│   │   ├── programs
+│   │   │   ├── CTL
+│   │   │   │   ├── btop
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── cava
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── fastfetch
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── fd
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── fzf
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── git
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── lazygit
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── lsd
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── neovim
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── nix-search-tv
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── pandoc
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── ripgrep
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── shell
+│   │   │   │   │   └── zsh
+│   │   │   │   │       └── default.nix
+│   │   │   │   ├── yazi
+│   │   │   │   │   └── default.nix
+│   │   │   │   └── yt-dlp
+│   │   │   │       └── default.nix
+│   │   │   └── GUI
+│   │   │       ├── browsers
+│   │   │       │   ├── chromium
+│   │   │       │   │   └── default.nix
+│   │   │       │   ├── firefox
+│   │   │       │   │   └── default.nix
+│   │   │       │   └── tor
+│   │   │       │       └── default.nix
+│   │   │       ├── discord
+│   │   │       │   └── default.nix
+│   │   │       ├── dolphin
+│   │   │       ├── games
+│   │   │       │   ├── factorio
+│   │   │       │   │   └── default.nix
+│   │   │       │   └── terraria
+│   │   │       │       └── default.nix
+│   │   │       ├── kitty
+│   │   │       │   └── default.nix
+│   │   │       ├── mangohud
+│   │   │       │   └── default.nix
+│   │   │       ├── mpv
+│   │   │       │   └── default.nix
+│   │   │       ├── obsidian
+│   │   │       │   └── default.nix
+│   │   │       ├── obs-studio
+│   │   │       │   └── default.nix
+│   │   │       ├── telegram
+│   │   │       │   ├── ayugram
+│   │   │       │   │   └── default.nix
+│   │   │       │   └── telegram
+│   │   │       │       └── default.nix
+│   │   │       ├── throne
+│   │   │       └── zathura
+│   │   │           └── default.nix
+│   │   ├── themes
+│   │   └── user.nix
+│   └── home-manager
+│       └── default.nix
+├── hosts
+│   └── terminal
+│       ├── hardware
+│       │   ├── fa507nvr
+│       │   │   └── default.nix
+│       │   └── nvidia
+│       │       └── default.nix
+│       ├── hardware-configuration.nix
+│       └── hostName.nix
+└── system
+    ├── core
+    │   ├── bootloader.nix
+    │   ├── linux-kernel.nix
+    │   ├── locale.nix
+    │   ├── network.nix
+    │   ├── nix
+    │   │   ├── nix-ld.nix
+    │   │   ├── nix.nix
+    │   │   └── nixpkgs.nix
+    │   └── sessionVariables
+    │       └── default.nix
+    ├── desktop
+    │   └── greetd
+    │       └── default.nix
+    ├── environment
+    │   ├── fonts
+    │   │   └── default.nix
+    │   └── mime
+    ├── programs
+    │   ├── appimage.nix
+    │   ├── gnupg.nix
+    │   ├── mtr.nix
+    │   └── nh
+    │       └── default.nix
+    ├── security
+    │   ├── polkit.nix
+    │   ├── sops.nix
+    │   └── sudo.nix
+    └── services
+        ├── openssh
+        │   └── default.nix
+        ├── pipewire
+        │   └── default.nix
+        ├── udisks2
+        │   └── default.nix
+        └── xserver
+            └── default.nix
+
+83 directories, 84 files
