@@ -43,7 +43,7 @@
       ../cicada/programs/GUI/browsers/tor
       ../cicada/programs/GUI/browsers/zen
       ../cicada/programs/GUI/discord
-      # ../cicada/programs/GUI/dolphin
+      ../cicada/programs/GUI/dolphin
       # ../cicada/programs/GUI/games/factorio
       # ../cicada/programs/GUI/games/terraria
       ../cicada/programs/GUI/kitty
