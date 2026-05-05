@@ -8,6 +8,7 @@
     ./hosts/terminal/hostName.nix
 
     ./programs/throne
+    ./programs/keepassxc
 
     ./system/core/bootloader.nix
     ./system/core/linux-kernel.nix
