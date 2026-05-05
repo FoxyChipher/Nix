@@ -1,3 +1,3 @@
 { config, pkgs, lib, inputs, ... }: {
-  programs."kdePackages.okular".enable = true;
+  home.packages = with pkgs; [ kdePackages.okular ];
 }

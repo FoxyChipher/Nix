@@ -52,7 +52,6 @@
       ../cicada/programs/GUI/obs-studio
       ../cicada/programs/GUI/telegram/ayugram
       ../cicada/programs/GUI/telegram/telegram
-      ../cicada/programs/GUI/throne
       ../cicada/programs/GUI/zed
   ../cicada/programs/GUI/spotify
   ../cicada/programs/GUI/qbittorrent

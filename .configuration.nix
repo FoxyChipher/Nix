@@ -7,6 +7,8 @@
     ./hosts/terminal/hardware-configuration.nix
     ./hosts/terminal/hostName.nix
 
+    ./programs/throne
+
     ./system/core/bootloader.nix
     ./system/core/linux-kernel.nix
     ./system/core/locale.nix
