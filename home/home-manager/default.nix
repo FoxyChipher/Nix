@@ -54,6 +54,7 @@
       ../cicada/programs/GUI/zed
   ../cicada/programs/GUI/spotify
   ../cicada/programs/GUI/qbittorrent
+  ../cicada/programs/GUI/keepassxc
       # ../cicada/programs/GUI/zathura
   ];
   home.username = "cicada";
