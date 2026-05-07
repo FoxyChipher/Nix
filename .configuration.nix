@@ -20,6 +20,7 @@
     ./system/core/sessionVariables
 
     ./system/desktop/greetd
+    ./system/desktop/hyprland
 
     ./system/environment/fonts
     # ./system/environment/mime
@@ -42,4 +43,6 @@
     ./system/services/udisks2
     ./system/services/xserver
   ];
+
+    hardware.bluetooth.enable = true;
 }

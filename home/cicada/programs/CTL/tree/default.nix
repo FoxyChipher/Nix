@@ -1,4 +1,4 @@
 { pkgs, ... }: {
-  # home.packages = [ pkgs.tree ];
-  programs.tree.enable = true;
+  home.packages = [ pkgs.tree ];
+  # programs.tree.enable = true;
 }

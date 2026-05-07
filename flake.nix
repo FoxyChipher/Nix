@@ -3,15 +3,24 @@
   inputs = {
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
 
     nixcord.url = "github:FlameFlag/nixcord";
 
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.noctalia-qs.follows = "noctalia-qs";
+    };
+
+    noctalia-qs = {
+      url = "github:noctalia-dev/noctalia-qs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     system76-scheduler-niri.url = "github:Kirottu/system76-scheduler-niri";
+
+    hyprland.url = "github:hyprwm/Hyprland";
 
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
@@ -46,9 +55,14 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    thunderbird-catppuccin = {
+      url = "github:catppuccin/thunderbird";
+      flake = false;
+    };
   };
 
-  outputs = { nixos-hardware, nixpkgs, home-manager, zen-browser, niri, agenix, spicetify-nix, sops-nix,
+  outputs = { nixos-hardware, nixpkgs, home-manager, hyprland, zen-browser, niri, agenix, spicetify-nix, sops-nix,
     # stylix,
     ... }@inputs:
   let
@@ -58,7 +72,12 @@
     nixosConfigurations."cicada" = nixpkgs.lib
     .nixosSystem {
       inherit system;
-      specialArgs = { inherit inputs; };
+      specialArgs = { inherit inputs;
+        pkgsStable = import inputs.nixpkgs-stable { inherit system; config.allowUnfree = true; };
+      };
+        # { pkgsStable, ... }: {
+        #   environment.systemPackages = [ pkgsStable.somePackage ];
+        # }
       modules = [
         ./.configuration.nix
         niri.nixosModules.niri

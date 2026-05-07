@@ -1,3 +1,3 @@
 { config, pkgs, lib, inputs, ... }: {
-  programs."kdePackages.elisa".enable = true;
+  home.packages = with pkgs; [ kdePackages.elisa ];
 }

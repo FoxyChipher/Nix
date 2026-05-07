@@ -1,4 +1,4 @@
-{ ... }: {
+{ lib, ... }: {
   environment.sessionVariables = {
     # === Wayland ===
     XDG_SESSION_TYPE = "wayland";
@@ -8,8 +8,7 @@
     SDL_VIDEODRIVER = "wayland";
 
     PATH = "$HOME/.local/bin:$PATH";
-    LD_LIBRARY_PATH = "/run/current-system/sw/share/nix-ld/lib";
-
+    # LD_LIBRARY_PATH = lib.mkForce "/run/current-system/sw/share/nix-ld/lib";
     # === Toolkit ===
     # QT_QPA_PLATFORM = "wayland;xcb";
     # GDK_BACKEND = "wayland,x11,*";
