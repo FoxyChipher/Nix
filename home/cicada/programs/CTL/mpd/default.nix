@@ -1,3 +1,0 @@
-{ ... }: {
-  programs.mpd.enable = true;
-}
