@@ -36,6 +36,7 @@
       ../cicada/programs/CTL/yazi
       ../cicada/programs/CTL/yt-dlp
       ../cicada/programs/CTL/inxi
+      ../cicada/programs/CTL/tree
       ../cicada/programs/CTL/htop
 
       ../cicada/programs/GUI/browsers/chromium
@@ -57,6 +58,8 @@
   ../cicada/programs/GUI/spotify
   ../cicada/programs/GUI/qbittorrent
   ../cicada/programs/GUI/okular
+  ../cicada/programs/GUI/elisa
+  # ../cicada/programs/GUI/spicetify
       # ../cicada/programs/GUI/zathura
   ];
   home.username = "cicada";
@@ -65,11 +68,24 @@
   # home.packages = with pkgs; [
   # ];
 
+  # home.pointerCursor = {
+  #   gtk.enable = true;
+  #   x11.enable = true;
+  #   package = pkgs.bibata-cursors;
+  #   name = "Bibata-Modern-Classic";
+  #   size = 24;
+  # };
+
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
     size = 24;
+  };
+
+  home.sessionVariables = {
+    XCURSOR_THEME = "Bibata-Modern-Classic";
+    XCURSOR_SIZE = "24";
   };
 }
