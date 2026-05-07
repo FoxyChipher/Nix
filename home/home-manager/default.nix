@@ -6,10 +6,11 @@
     ../cicada/desktop/cliphist
       # ../cicada/desktop/fusuma
       ../cicada/desktop/fuzzel
-      # ../cicada/desktop/hyprland
+      ../cicada/desktop/hyprland
       ../cicada/desktop/hyprlock
       ../cicada/desktop/niri
       ../cicada/desktop/noctalia
+      ../cicada/desktop/noctalia/niri
       ../cicada/desktop/portals
       # ../cicada/desktop/rofi
       # ../cicada/desktop/stasis
