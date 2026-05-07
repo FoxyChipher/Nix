@@ -10,7 +10,7 @@
       ../cicada/desktop/hyprlock
       ../cicada/desktop/niri
       ../cicada/desktop/noctalia
-      ../cicada/desktop/noctalia/niri
+      # ../cicada/desktop/noctalia/niri #tested
       ../cicada/desktop/portals
       # ../cicada/desktop/rofi
       # ../cicada/desktop/stasis
@@ -66,6 +66,7 @@
   home.username = "cicada";
   home.homeDirectory = lib.mkForce "/home/cicada";
   home.stateVersion = "24.11";
+  xdg.userDirs.setSessionVariables = true;
   # home.packages = with pkgs; [
   # ];
 

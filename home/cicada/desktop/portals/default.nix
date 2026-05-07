@@ -13,9 +13,9 @@
       videos = "${homeDirectory}/Media/Videos";
       pictures = "${homeDirectory}/Media/Screenshots";
       extraConfig = {
-        XDG_REPO_DIR = "${homeDirectory}/Downloads/Repositories";
-        XDG_PIC_DIR = "${homeDirectory}/Downloads/Pictures";
-        XDG_VID_DIR = "${homeDirectory}/Downloads/Videos";
+        REPO = "${homeDirectory}/Downloads/Repositories";
+        PIC  = "${homeDirectory}/Downloads/Pictures";
+        VID  = "${homeDirectory}/Downloads/Videos";
       };
     };
     mimeApps = {

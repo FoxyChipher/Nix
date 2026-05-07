@@ -2,7 +2,7 @@
 
   extraSpecialArgs = { inherit inputs; };
 
-  xdg.configFile."noctalia/niri" = {
+  xdg.configFile."noctalia/profiles/niri" = {
     source = ./config;
     recursive = true;
   };

@@ -34,7 +34,7 @@
     "d /etc/asusd 0755 root root -"
   ];
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
