@@ -4,6 +4,7 @@
     ./home/cicada/pkgs.nix
 
     ./hosts/terminal/hardware/fa507nvr
+    ./hosts/terminal/hardware/bluetooth
     ./hosts/terminal/hardware-configuration.nix
     ./hosts/terminal/hostName.nix
 
