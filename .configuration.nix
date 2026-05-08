@@ -42,6 +42,7 @@
     # ── System / Services ────────────────────────────────────────────────────
     ./system/services/openssh
     ./system/services/pipewire
+    ./system/services/pulseaudio
     ./system/services/udisks2
     ./system/services/xserver
     ./system/services/mpd
