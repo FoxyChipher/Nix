@@ -35,9 +35,7 @@
 │   │   │   │   ├── default.nix
 │   │   │   │   └── niri
 │   │   │   │       ├── config
-│   │   │   │       │   ├── meta.json
-│   │   │   │       │   ├── plugins.json
-│   │   │   │       │   └── settings.json
+│   │   │   │       │   └── meta.json
 │   │   │   │       └── default.nix
 │   │   │   ├── portals
 │   │   │   │   └── default.nix
@@ -149,6 +147,9 @@
 │   │   │       ├── zathura
 │   │   │       │   └── default.nix
 │   │   │       └── zed
+│   │   │           ├── config
+│   │   │           │   ├── settings.json
+│   │   │           │   └── themes
 │   │   │           └── default.nix
 │   │   └── user.nix
 │   └── home-manager
@@ -156,6 +157,8 @@
 ├── hosts
 │   └── terminal
 │       ├── hardware
+│       │   ├── bluetooth
+│       │   │   └── default.nix
 │       │   ├── fa507nvr
 │       │   │   └── default.nix
 │       │   └── nvidia
@@ -164,6 +167,8 @@
 │       └── hostName.nix
 ├── programs
 │   ├── keepassxc
+│   │   └── default.nix
+│   ├── nix-dev
 │   │   └── default.nix
 │   └── throne
 │       └── default.nix
@@ -216,9 +221,11 @@
         │   └── default.nix
         ├── pipewire
         │   └── default.nix
+        ├── pulseaudio
+        │   └── default.nix
         ├── udisks2
         │   └── default.nix
         └── xserver
             └── default.nix
 
-107 directories, 115 files
+112 directories, 117 files
