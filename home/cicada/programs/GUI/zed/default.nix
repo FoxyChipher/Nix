@@ -11,12 +11,12 @@
     extensions = [ "nix" "toml" "rust" ];
     userSettings = {
       theme = {
-        mode = "system";
+        mode = "dark";
         dark = "One Dark";
         light = "One Light";
       };
       hour_format = "hour24";
-      vim_mode = true;
+      vim_mode = false;
     };
   };
 }

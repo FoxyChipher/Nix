@@ -50,6 +50,7 @@
     # ── Programs (user-level) ────────────────────────────────────────────────
     ./programs/throne
     ./programs/keepassxc
+    ./programs/nix-dev
 
     # ── Home ─────────────────────────────────────────────────────────────────
     ./home/cicada/user.nix

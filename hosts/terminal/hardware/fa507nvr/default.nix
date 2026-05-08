@@ -34,13 +34,12 @@
     "d /etc/asusd 0755 root root -"
   ];
 
-  services.pulseaudio.enable = false;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
+  # services.pipewire = {
+  #   enable = true;
+  #   alsa.enable = true;
+  #   alsa.support32Bit = true;
+  #   pulse.enable = true;
+  # };
 
   # Bluetooth
   hardware.bluetooth = {
