@@ -42,6 +42,7 @@
     ./system/services/pipewire
     ./system/services/udisks2
     ./system/services/xserver
+    ./system/services/mpd
   ];
 
     hardware.bluetooth.enable = true;
