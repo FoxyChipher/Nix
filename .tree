@@ -1,4 +1,5 @@
 .
+├── flake.lock
 ├── flake.nix
 ├── home
 │   ├── cicada
@@ -12,6 +13,8 @@
 │   │   │   ├── hyprland
 │   │   │   │   └── default.nix
 │   │   │   ├── hyprlock
+│   │   │   │   ├── config
+│   │   │   │   │   └── hyprlock.conf
 │   │   │   │   └── default.nix
 │   │   │   ├── niri
 │   │   │   │   ├── config
@@ -29,7 +32,13 @@
 │   │   │   │   │   └── window-rule.kdl
 │   │   │   │   └── default.nix
 │   │   │   ├── noctalia
-│   │   │   │   └── default.nix
+│   │   │   │   ├── default.nix
+│   │   │   │   └── niri
+│   │   │   │       ├── config
+│   │   │   │       │   ├── meta.json
+│   │   │   │       │   ├── plugins.json
+│   │   │   │       │   └── settings.json
+│   │   │   │       └── default.nix
 │   │   │   ├── portals
 │   │   │   │   └── default.nix
 │   │   │   ├── rofi
@@ -47,6 +56,7 @@
 │   │   ├── local
 │   │   │   └── factorio
 │   │   │       └── default.nix
+│   │   ├── pkgs.nix
 │   │   ├── programs
 │   │   │   ├── CTL
 │   │   │   │   ├── btop
@@ -60,6 +70,10 @@
 │   │   │   │   ├── fzf
 │   │   │   │   │   └── default.nix
 │   │   │   │   ├── git
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── htop
+│   │   │   │   │   └── default.nix
+│   │   │   │   ├── inxi
 │   │   │   │   │   └── default.nix
 │   │   │   │   ├── lazygit
 │   │   │   │   │   └── default.nix
@@ -75,7 +89,11 @@
 │   │   │   │   │   └── default.nix
 │   │   │   │   ├── shell
 │   │   │   │   │   └── zsh
-│   │   │   │   │       └── default.nix
+│   │   │   │   │       ├── default.nix
+│   │   │   │   │       └── ohMyZsh
+│   │   │   │   │           └── default.nix
+│   │   │   │   ├── tree
+│   │   │   │   │   └── default.nix
 │   │   │   │   ├── yazi
 │   │   │   │   │   └── default.nix
 │   │   │   │   └── yt-dlp
@@ -86,11 +104,18 @@
 │   │   │       │   │   └── default.nix
 │   │   │       │   ├── firefox
 │   │   │       │   │   └── default.nix
-│   │   │       │   └── tor
+│   │   │       │   ├── tor
+│   │   │       │   │   └── default.nix
+│   │   │       │   └── zen
 │   │   │       │       └── default.nix
 │   │   │       ├── discord
 │   │   │       │   └── default.nix
 │   │   │       ├── dolphin
+│   │   │       │   └── default.nix
+│   │   │       ├── elisa
+│   │   │       │   └── default.nix
+│   │   │       ├── gamemode
+│   │   │       │   └── default.nix
 │   │   │       ├── games
 │   │   │       │   ├── factorio
 │   │   │       │   │   └── default.nix
@@ -106,15 +131,25 @@
 │   │   │       │   └── default.nix
 │   │   │       ├── obs-studio
 │   │   │       │   └── default.nix
+│   │   │       ├── okular
+│   │   │       │   └── default.nix
+│   │   │       ├── qbittorrent
+│   │   │       │   └── default.nix
+│   │   │       ├── spicetify
+│   │   │       │   └── default.nix
+│   │   │       ├── spotify
+│   │   │       │   └── default.nix
+│   │   │       ├── steam
+│   │   │       │   └── default.nix
 │   │   │       ├── telegram
 │   │   │       │   ├── ayugram
 │   │   │       │   │   └── default.nix
 │   │   │       │   └── telegram
 │   │   │       │       └── default.nix
-│   │   │       ├── throne
-│   │   │       └── zathura
+│   │   │       ├── zathura
+│   │   │       │   └── default.nix
+│   │   │       └── zed
 │   │   │           └── default.nix
-│   │   ├── themes
 │   │   └── user.nix
 │   └── home-manager
 │       └── default.nix
@@ -127,6 +162,11 @@
 │       │       └── default.nix
 │       ├── hardware-configuration.nix
 │       └── hostName.nix
+├── programs
+│   ├── keepassxc
+│   │   └── default.nix
+│   └── throne
+│       └── default.nix
 └── system
     ├── core
     │   ├── bootloader.nix
@@ -140,23 +180,38 @@
     │   └── sessionVariables
     │       └── default.nix
     ├── desktop
-    │   └── greetd
+    │   ├── greetd
+    │   │   └── default.nix
+    │   └── hyprland
     │       └── default.nix
     ├── environment
-    │   ├── fonts
-    │   │   └── default.nix
-    │   └── mime
+    │   └── fonts
+    │       └── default.nix
     ├── programs
     │   ├── appimage.nix
+    │   ├── btop-cuda
+    │   │   └── default.nix
+    │   ├── curl
+    │   │   └── default.nix
     │   ├── gnupg.nix
     │   ├── mtr.nix
-    │   └── nh
+    │   ├── nh
+    │   │   └── default.nix
+    │   ├── nvtop
+    │   │   └── default.nix
+    │   └── wget
     │       └── default.nix
     ├── security
     │   ├── polkit.nix
     │   ├── sops.nix
     │   └── sudo.nix
     └── services
+        ├── anki
+        │   └── default.nix
+        ├── dump1090
+        │   └── default.nix
+        ├── mpd
+        │   └── default.nix
         ├── openssh
         │   └── default.nix
         ├── pipewire
@@ -166,4 +221,4 @@
         └── xserver
             └── default.nix
 
-83 directories, 84 files
+107 directories, 115 files
