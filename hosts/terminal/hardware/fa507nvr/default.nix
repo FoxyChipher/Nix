@@ -1,4 +1,9 @@
-{ config, pkgs, lib, inputs, ... }: {
+{
+  pkgs,
+  lib, inputs,
+  ...
+}:
+{
   imports = [
     inputs.nixos-hardware.nixosModules.common-cpu-amd
     inputs.nixos-hardware.nixosModules.common-cpu-amd-pstate
@@ -12,7 +17,7 @@
 
   environment.systemPackages = with pkgs; [
     asusctl
-    supergfxctl  # управление GPU режимами
+    supergfxctl # управление GPU режимами
   ];
 
   services.asusd = {

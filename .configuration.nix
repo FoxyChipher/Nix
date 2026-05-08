@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   imports = [
     # ── Host ────────────────────────────────────────────────────────────────
     ./hosts/terminal/hardware-configuration.nix
