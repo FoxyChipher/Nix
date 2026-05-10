@@ -26,7 +26,7 @@
     ../cicada/programs/CTL/git
     # ../cicada/programs/CTL/lazygit
     ../cicada/programs/CTL/lsd
-    # ../cicada/programs/CTL/neovim
+    ../cicada/programs/CTL/neovim
     ../cicada/programs/CTL/nix-search-tv
     ../cicada/programs/CTL/pandoc
     ../cicada/programs/CTL/ripgrep
