@@ -53,6 +53,7 @@
     # ../cicada/programs/GUI/games/factorio
     # ../cicada/programs/GUI/games/terraria
     ../cicada/programs/GUI/games/minecraft
+    ../cicada/programs/GUI/games/steam
     ../cicada/programs/GUI/kitty
     ../cicada/programs/GUI/mangohud
     ../cicada/programs/GUI/mpv
