@@ -54,6 +54,7 @@
     ./programs/keepassxc
     ./programs/nix-dev
     ./programs/java-dev
+    ./programs/python-dev
 
     # ── Home ─────────────────────────────────────────────────────────────────
     ./home/cicada/user.nix
