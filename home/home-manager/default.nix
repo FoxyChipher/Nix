@@ -61,6 +61,7 @@
     ../cicada/programs/GUI/qbittorrent
     ../cicada/programs/GUI/okular
     ../cicada/programs/GUI/elisa
+    ../cicada/programs/GUI/vim
 
     # ── Programs / Other ─────────────────────────────────────────────────────
     ../cicada/programs/other/gtk
