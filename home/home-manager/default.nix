@@ -63,6 +63,7 @@
 
   ../cicada/programs/other/gtk
   ../cicada/programs/other/qt
+  ../cicada/programs/other
   # ../cicada/programs/GUI/spicetify
       # ../cicada/programs/GUI/zathura
   ];
