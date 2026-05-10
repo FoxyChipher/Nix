@@ -17,6 +17,10 @@
     ../cicada/desktop/udiskie
     # ../cicada/desktop/waybar
 
+    # ── Desktop ──────────────────────────────────────────────────────────────
+    ../cicada/local/AstralRinth
+    # ../cicada/local/factorio
+
     # ── Programs / CTL ───────────────────────────────────────────────────────
     # ../cicada/programs/CTL/btop
     ../cicada/programs/CTL/cava
