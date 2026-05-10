@@ -62,6 +62,7 @@
   ../cicada/programs/GUI/elisa
 
   ../cicada/programs/other/gtk
+  ../cicada/programs/other/qt
   # ../cicada/programs/GUI/spicetify
       # ../cicada/programs/GUI/zathura
   ];
