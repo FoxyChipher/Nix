@@ -1,71 +1,73 @@
 { config, pkgs, lib, inputs, ... }: {
   imports = [
-    # ../../modules/services/swaync.nix  # ← добавь это
-    # ../../users/cicada/default.nix
-    # === HOME ===
+    # ── Desktop ──────────────────────────────────────────────────────────────
     ../cicada/desktop/cliphist
-      # ../cicada/desktop/fusuma
-      ../cicada/desktop/fuzzel
-      ../cicada/desktop/hyprland
-      ../cicada/desktop/hyprlock
-      ../cicada/desktop/niri
-      ../cicada/desktop/noctalia
-      # ../cicada/desktop/noctalia/niri #tested
-      ../cicada/desktop/portals
-      # ../cicada/desktop/rofi
-      # ../cicada/desktop/stasis
-      # ../cicada/desktop/swayimg
-      # ../cicada/desktop/swaync
-      ../cicada/desktop/udiskie
-      # ../cicada/desktop/waybar
+    # ../cicada/desktop/fusuma
+    ../cicada/desktop/fuzzel
+    ../cicada/desktop/hyprland
+    ../cicada/desktop/hyprlock
+    ../cicada/desktop/niri
+    ../cicada/desktop/noctalia
+    # ../cicada/desktop/noctalia/niri #tested
+    ../cicada/desktop/portals
+    # ../cicada/desktop/rofi
+    # ../cicada/desktop/stasis
+    # ../cicada/desktop/swayimg
+    # ../cicada/desktop/swaync
+    ../cicada/desktop/udiskie
+    # ../cicada/desktop/waybar
 
+    # ── Programs / CTL ───────────────────────────────────────────────────────
+    # ../cicada/programs/CTL/btop
+    ../cicada/programs/CTL/cava
+    ../cicada/programs/CTL/fastfetch
+    ../cicada/programs/CTL/fd
+    ../cicada/programs/CTL/fzf
+    ../cicada/programs/CTL/git
+    # ../cicada/programs/CTL/lazygit
+    ../cicada/programs/CTL/lsd
+    # ../cicada/programs/CTL/neovim
+    ../cicada/programs/CTL/nix-search-tv
+    ../cicada/programs/CTL/pandoc
+    ../cicada/programs/CTL/ripgrep
+    # ../cicada/programs/CTL/shell
+    ../cicada/programs/CTL/yazi
+    ../cicada/programs/CTL/yt-dlp
+    ../cicada/programs/CTL/inxi
+    ../cicada/programs/CTL/tree
+    ../cicada/programs/CTL/htop
 
-      # ../cicada/programs/CTL/btop
-      ../cicada/programs/CTL/cava
-      ../cicada/programs/CTL/fastfetch
-      ../cicada/programs/CTL/fd
-      ../cicada/programs/CTL/fzf
-      ../cicada/programs/CTL/git
-      # ../cicada/programs/CTL/lazygit
-      ../cicada/programs/CTL/lsd
-      # ../cicada/programs/CTL/neovim
-      ../cicada/programs/CTL/nix-search-tv
-      ../cicada/programs/CTL/pandoc
-      ../cicada/programs/CTL/ripgrep
-      # ../cicada/programs/CTL/shell
-      ../cicada/programs/CTL/yazi
-      ../cicada/programs/CTL/yt-dlp
-      ../cicada/programs/CTL/inxi
-      ../cicada/programs/CTL/tree
-      ../cicada/programs/CTL/htop
+    # ── Programs / GUI / Browsers ────────────────────────────────────────────
+    ../cicada/programs/GUI/browsers/chromium
+    ../cicada/programs/GUI/browsers/firefox
+    ../cicada/programs/GUI/browsers/tor
+    ../cicada/programs/GUI/browsers/zen
 
-      ../cicada/programs/GUI/browsers/chromium
-      ../cicada/programs/GUI/browsers/firefox
-      ../cicada/programs/GUI/browsers/tor
-      ../cicada/programs/GUI/browsers/zen
-      ../cicada/programs/GUI/discord
-      ../cicada/programs/GUI/dolphin
-      # ../cicada/programs/GUI/games/factorio
-      # ../cicada/programs/GUI/games/terraria
-      ../cicada/programs/GUI/games/minecraft
-      ../cicada/programs/GUI/kitty
-      ../cicada/programs/GUI/mangohud
-      ../cicada/programs/GUI/mpv
-      ../cicada/programs/GUI/obsidian
-      ../cicada/programs/GUI/obs-studio
-      ../cicada/programs/GUI/telegram/ayugram
-      ../cicada/programs/GUI/telegram/telegram
-      ../cicada/programs/GUI/zed
-  ../cicada/programs/GUI/spotify
-  ../cicada/programs/GUI/qbittorrent
-  ../cicada/programs/GUI/okular
-  ../cicada/programs/GUI/elisa
+    # ── Programs / GUI ───────────────────────────────────────────────────────
+    ../cicada/programs/GUI/discord
+    ../cicada/programs/GUI/dolphin
+    # ../cicada/programs/GUI/games/factorio
+    # ../cicada/programs/GUI/games/terraria
+    ../cicada/programs/GUI/games/minecraft
+    ../cicada/programs/GUI/kitty
+    ../cicada/programs/GUI/mangohud
+    ../cicada/programs/GUI/mpv
+    ../cicada/programs/GUI/obsidian
+    ../cicada/programs/GUI/obs-studio
+    ../cicada/programs/GUI/telegram/ayugram
+    ../cicada/programs/GUI/telegram/telegram
+    ../cicada/programs/GUI/zed
+    ../cicada/programs/GUI/spotify
+    ../cicada/programs/GUI/qbittorrent
+    ../cicada/programs/GUI/okular
+    ../cicada/programs/GUI/elisa
 
-  ../cicada/programs/other/gtk
-  ../cicada/programs/other/qt
-  ../cicada/programs/other
-  # ../cicada/programs/GUI/spicetify
-      # ../cicada/programs/GUI/zathura
+    # ── Programs / Other ─────────────────────────────────────────────────────
+    ../cicada/programs/other/gtk
+    ../cicada/programs/other/qt
+    ../cicada/programs/other
+    # ../cicada/programs/GUI/spicetify
+    # ../cicada/programs/GUI/zathura
   ];
   home.username = "cicada";
   home.homeDirectory = lib.mkForce "/home/cicada";
