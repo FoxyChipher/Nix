@@ -1,9 +1,6 @@
 { pkgs, ... }: {
-  programs.steam = {
-    enable = true;
-  };
-
-  programs.steam-run = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    steam
+    steam-run
+  ];
 }
