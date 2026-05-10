@@ -16,6 +16,7 @@
     ./system/core/nix/nixpkgs.nix
     ./system/core/nix/nix-ld.nix
     ./system/core/sessionVariables
+    ./system/core/xwayland
 
     # ── System / Desktop ─────────────────────────────────────────────────────
     ./system/desktop/greetd
@@ -52,6 +53,7 @@
     ./programs/throne
     ./programs/keepassxc
     ./programs/nix-dev
+    ./programs/java-dev
 
     # ── Home ─────────────────────────────────────────────────────────────────
     ./home/cicada/user.nix

@@ -1,17 +1,10 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "languages": {
     "Nix": {
-      "tab_size": 2
-      "formatter": "language_server"
-      "format_on_save": "on"
+      "tab_size": 2,
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "language_servers": ["nixd", "!nil"]
     }
   },
   "terminal": {
@@ -40,5 +33,34 @@
     "mode": "dark",
     "light": "One Light",
     "dark": "GitHub Dark"
+  },
+  "lsp": {
+    "Nix": {
+      "formatter": {
+        "external": {
+          "command": "alejandra",
+          "arguments": ["--quiet", "--"]
+        }
+      }
+    },
+    "nil": {
+      "initialization_options": {
+        "formatting": {
+          "command": ["alejandra", "--quiet", "--"]
+        }
+      },
+      "settings": {
+        "diagnostic": {
+          "suppress": ["sema-extra-with"]
+        }
+      }
+    },
+    "nixd": {
+      "initialization_options": {
+        "formatting": {
+          "command": ["nixfmt"]
+        }
+      }
+    }
   }
 }

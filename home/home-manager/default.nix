@@ -19,7 +19,6 @@
       ../cicada/desktop/udiskie
       # ../cicada/desktop/waybar
 
-      # ../cicada/local/factorio
 
       # ../cicada/programs/CTL/btop
       ../cicada/programs/CTL/cava
@@ -48,6 +47,7 @@
       ../cicada/programs/GUI/dolphin
       # ../cicada/programs/GUI/games/factorio
       # ../cicada/programs/GUI/games/terraria
+      ../cicada/programs/GUI/games/minecraft
       ../cicada/programs/GUI/kitty
       ../cicada/programs/GUI/mangohud
       ../cicada/programs/GUI/mpv
@@ -60,6 +60,8 @@
   ../cicada/programs/GUI/qbittorrent
   ../cicada/programs/GUI/okular
   ../cicada/programs/GUI/elisa
+
+  ../cicada/programs/other/gtk
   # ../cicada/programs/GUI/spicetify
       # ../cicada/programs/GUI/zathura
   ];

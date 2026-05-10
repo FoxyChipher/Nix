@@ -7,5 +7,7 @@
     nixdoc
     nixfmt
     nixfmt-tree
+    zed-editor-fhs
+    micro-full
   ];
 }

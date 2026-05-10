@@ -60,9 +60,16 @@
       url = "github:catppuccin/thunderbird";
       flake = false;
     };
+
+  		freesmlauncher = {
+			url = "github:FreesmTeam/FreesmLauncher";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
   };
 
-  outputs = { nixos-hardware, nixpkgs, home-manager, hyprland, zen-browser, niri, agenix, spicetify-nix, sops-nix,
+  outputs = { nixos-hardware, nixpkgs, home-manager,
+    hyprland, zen-browser, niri, agenix, spicetify-nix,
+    sops-nix, freesmlauncher,
     # stylix,
     ... }@inputs:
   let
